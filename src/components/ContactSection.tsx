@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -83,20 +82,7 @@ const ContactSection = () => {
               Nous sommes là pour transformer vos idées en solutions digitales performantes. Remplissez le formulaire et nous vous contacterons dans les plus brefs délais.
             </p>
             
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 h-12 w-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                </div>
-                <div className="ml-4">
-                  <h4 className="text-lg font-medium">Notre adresse</h4>
-                  <p className="text-gray-600">123 Avenue Mohammed V, Casablanca, Maroc</p>
-                </div>
-              </div>
-              
+            <div className="space-y-6">              
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-12 w-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,7 +103,7 @@ const ContactSection = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium">Téléphone</h4>
-                  <p className="text-gray-600">+212 5XX-XXXXXX</p>
+                  <p className="text-gray-600">+212689058974</p>
                 </div>
               </div>
             </div>

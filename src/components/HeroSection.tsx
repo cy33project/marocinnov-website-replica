@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Star } from "lucide-react";
 
 const HeroSection = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -34,20 +34,24 @@ const HeroSection = () => {
   };
   
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary to-secondary/90 text-white overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 to-secondary text-white overflow-hidden">
       <div 
-        className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581084324492-c8076f130f86')] bg-cover bg-center opacity-20"
+        className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581084324492-c8076f130f86')] bg-cover bg-center opacity-10"
       />
       
-      <div className="absolute inset-0 bg-gradient-to-br from-secondary/90 to-primary/40" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/95" />
       
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="flex flex-col items-center justify-center text-center">
+          <div className="relative mb-8">
+            <Star className="text-primary w-12 h-12 animate-spin-slow absolute -top-16 left-1/2 -translate-x-1/2" strokeWidth={1.5} />
+          </div>
+          
           <h1 
             ref={textRef}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-on-scroll opacity-0 transform translate-y-10"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-on-scroll opacity-0 transform translate-y-10 bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary/60"
           >
-            Innovation Digitale <span className="text-primary">au Maroc</span>
+            Innovation Digitale <br/>au Maroc
           </h1>
           
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto animate-on-scroll opacity-0 transform translate-y-10" style={{animationDelay: "0.2s"}}>
