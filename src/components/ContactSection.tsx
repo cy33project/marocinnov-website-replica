@@ -42,15 +42,16 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
       toast({
         title: "Message envoyé!",
-        description: "Nous vous contacterons bientôt.",
+        description: "Nous vous contacterons bientôt à l'adresse contact@marocinnov.com",
       });
       
       setFormData({
@@ -59,9 +60,15 @@ const ContactSection = () => {
         phone: "",
         message: ""
       });
-      
+    } catch (error) {
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue lors de l'envoi du message.",
+        variant: "destructive"
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -82,7 +89,7 @@ const ContactSection = () => {
               Nous sommes là pour transformer vos idées en solutions digitales performantes. Remplissez le formulaire et nous vous contacterons dans les plus brefs délais.
             </p>
             
-            <div className="space-y-6">              
+            <div className="space-y-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0 h-12 w-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

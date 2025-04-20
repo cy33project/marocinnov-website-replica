@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 
 const FooterSection = () => {
   return (
     <footer className="bg-secondary text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-1">
             <a href="/" className="text-2xl font-bold text-white mb-4 inline-block">MarocInnov</a>
             <p className="text-gray-300 mt-4">
@@ -29,7 +28,7 @@ const FooterSection = () => {
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
-                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878 1.216.009 1.845.7 2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                 </svg>
               </a>
             </div>
@@ -40,7 +39,6 @@ const FooterSection = () => {
             <ul className="space-y-2">
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">À Propos</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#team" className="text-gray-300 hover:text-white transition-colors">Notre Équipe</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -53,17 +51,6 @@ const FooterSection = () => {
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Design UX/UI</a></li>
               <li><a href="#services" className="text-gray-300 hover:text-white transition-colors">Marketing Digital</a></li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p className="text-gray-300 mb-4">Inscrivez-vous pour recevoir nos dernières actualités et offres.</p>
-            <div className="flex">
-              <input type="email" placeholder="Votre email" className="flex-1 px-4 py-2 text-gray-900 rounded-l-md focus:outline-none" />
-              <Button className="bg-primary hover:bg-primary/90 rounded-l-none">
-                S'inscrire
-              </Button>
-            </div>
           </div>
         </div>
         

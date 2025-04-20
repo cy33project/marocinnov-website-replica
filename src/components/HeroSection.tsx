@@ -43,8 +43,9 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="flex flex-col items-center justify-center text-center">
-          <div className="relative mb-8">
-            <Star className="text-primary w-12 h-12 animate-spin-slow absolute -top-16 left-1/2 -translate-x-1/2" strokeWidth={1.5} />
+          <div className="relative mb-8 w-full">
+            <Star className="text-primary w-12 h-12 animate-spin-slow absolute -top-16 left-1/4 -translate-x-1/2" strokeWidth={1.5} />
+            <Star className="text-primary w-12 h-12 animate-spin-slow absolute -top-16 right-1/4 translate-x-1/2" strokeWidth={1.5} />
           </div>
           
           <h1 
