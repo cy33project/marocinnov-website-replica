@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
@@ -44,7 +43,7 @@ const HeroSection = () => {
           {/* Two Rotating Stars */}
           <div className="relative mb-8 w-full h-48 flex items-center justify-center gap-12">
             <svg
-              className="star-rotate w-20 h-20 text-primary"
+              className="star-rotate w-24 h-24 text-primary"
               viewBox="0 0 64 64"
               fill="none"
               stroke="currentColor"
@@ -58,7 +57,7 @@ const HeroSection = () => {
               />
             </svg>
             <svg
-              className="star-rotate w-28 h-28 text-yellow-400"
+              className="star-rotate w-24 h-24 text-primary"
               viewBox="0 0 64 64"
               fill="none"
               stroke="currentColor"
