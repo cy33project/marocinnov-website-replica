@@ -20,7 +20,7 @@ const Globe = () => {
           color="#9b87f5"
           metalness={0.5}
           roughness={0.7}
-          wireframe
+          wireframe={true}
         />
       </Sphere>
     </mesh>
