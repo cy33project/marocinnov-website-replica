@@ -1,5 +1,5 @@
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 import { Canvas } from "@react-three/fiber";
@@ -49,7 +49,9 @@ const HeroSection = () => {
             <Canvas camera={{ position: [0, 0, 4] }}>
               <ambientLight intensity={0.5} />
               <pointLight position={[10, 10, 10]} />
-              <Globe />
+              <Suspense fallback={null}>
+                <Globe />
+              </Suspense>
             </Canvas>
           </div>
           
