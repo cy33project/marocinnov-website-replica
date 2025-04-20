@@ -1,7 +1,9 @@
 
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Star } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import { Canvas } from "@react-three/fiber";
+import Globe from "./Globe";
 
 const HeroSection = () => {
   const textRef = useRef<HTMLHeadingElement>(null);
@@ -43,9 +45,12 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="flex flex-col items-center justify-center text-center">
-          <div className="relative mb-8 w-full">
-            <Star className="text-primary w-12 h-12 animate-spin-slow absolute -top-16 left-1/4 -translate-x-1/2" strokeWidth={1.5} />
-            <Star className="text-primary w-12 h-12 animate-spin-slow absolute -top-16 right-1/4 translate-x-1/2" strokeWidth={1.5} />
+          <div className="relative mb-8 w-full h-48">
+            <Canvas camera={{ position: [0, 0, 4] }}>
+              <ambientLight intensity={0.5} />
+              <pointLight position={[10, 10, 10]} />
+              <Globe />
+            </Canvas>
           </div>
           
           <h1 
